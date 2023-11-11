@@ -1,4 +1,4 @@
 # sneakers-store
-Proiect Afaceri Electronice <br>
-Udris Bogdan Petrisor - gr. 1143
-BDSA @ ASE - 2023
+<h3> Proiect Afaceri Electronice </h3>
+<br> Udris Bogdan Petrisor - gr. 1143
+<br> BDSA @ ASE - 2023
