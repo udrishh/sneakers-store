@@ -1,0 +1,17 @@
+﻿@using SneakersStore.Models.Entities
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var loggedUser = HttpContextAccessor.HttpContext.Session.Get<User>(SessionHelper.LoggedUser);
+}
+@if (loggedUser != null)
+{
+    @if (string.Equals(loggedUser.Role, "admin", StringComparison.InvariantCultureIgnoreCase))
+    {
+        <h1>Hello @loggedUser.UserName! Enjoy your store administration session!</h1>
+    }
+    else
+    {
+        <h1>Hello @loggedUser.UserName! Enjoy your shopping session!</h1>
+    }
+}
